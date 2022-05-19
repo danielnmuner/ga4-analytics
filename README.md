@@ -88,3 +88,30 @@ Los informes Adquisición pueden proporcionar información valiosa sobre cómo l
 - Referals: Other websites
 - Email: Email Marketing Compaign
 - None of the Above: Cuando la URL es escrita directamente. 
+**Sourse/Fuente**: Se refiere a la fuente/Origen de la busqueda y nos da mas informacion hacerca del medio.
+- Fuente Referals: URL del sitio que nos refiere.
+- Organic: Browser donde se realizo la busqueda.
+
+Esta informacion esta disponible en el informe de **Adquisicion** -> _All trafic_ -> **Source/Medium**. No es sufuciente identificar la fuente principal de datos es importante tambien conocer el **% de Rebote** para identificar la calidad del trafico. Ademas de utilizar filtros por mas detallados.
+
+![image](https://user-images.githubusercontent.com/60556632/169389562-011b1eb6-ada2-46df-8b4e-7270bf88cb82.png)
+
+
+- **Adquisicion** -> _All trafic_ -> **Channel** Podemos tabien encontrar los canales y cada uno con su respectiva fuente.
+
+![image](https://user-images.githubusercontent.com/60556632/169388459-52901f29-0d80-489b-b8e2-e55783b9efe1.png)
+
+- **Adquisicion** -> _All trafic_ -> **Referrals** Podemos investigar mas a detalle las paginas exactas de los referrals que nos estan trayendo trafico. Añadiendo la dimension secundaria `Landing Page` podemos ver donde estan aterrizando los referrals en nuestro website.
+ 
+**Informes Comportamiento**
+Los informes Comportamiento muestran cómo los usuarios interactúan con su sitio web. Pueden incluir diferente información, como el contenido que ven los usuarios o la forma en la que navegan por las páginas. Veamos algunos de los informes Comportamiento más útiles.
+
+- **Informe de todas las paginas**: **Comportamiento** -> _OCntenido del Sitio_ -> **Todas las Paginas** Este informe permite ver las paginas mas populares entre nuestro usuarios. 
+- **Comportamiento** -> _Contenido del Sitio_ -> **Desglose de Contenido** se basa en la estrutura de archivos de nuestro codigo y nos indica a nivel de archivos cuales son mas populares.
+- **Comportamiento** -> _Contenido del Sitio_ -> **Landing Page** identificamos las metricas como porcentaje de rebote en nuestras landing pages.
+- **Comportamiento** -> _Contenido del Sitio_ -> **Exit Pages** Paginas donde los usuarios dejaron el sitio web.
+- **Comportamiento** -> _Eventos_ -> **Desglose de Contenido** Permite evaluar como interactuan los usuarios con objetos especificos del sitio web como botones o reproductor de video.
+
+
+
+
