@@ -29,7 +29,7 @@ Es una herramienta para analizar tendencias de los que los usuarios hacen con su
 
 ![image](https://user-images.githubusercontent.com/60556632/169178961-5bae282c-80fb-4ace-a261-9e71f62da355.png)
 
-  - **Selector de Matricas**:
+  - **Selector de Metricas**:
 
 ![image](https://user-images.githubusercontent.com/60556632/169179105-dd0173d6-36a8-4b00-8595-1cfc0e4a8419.png)
   - **Anotador de Graficos**: Se encuentra en la parte inferior del grafico y nos permite crear notas para aclarar el contexto de los datos.
@@ -57,6 +57,29 @@ El informe default es `Audiencia` y en la parte inferior podemos encontrar la op
 ![image](https://user-images.githubusercontent.com/60556632/169194151-b6d449a7-3cc5-44bf-9d0e-da78d18d0a0d.png)
 
 En la barra de busqueda podemos ser mas especifico con la dimension o por ejemplo a nievel de pais indicar ¿Cual?, ademas hay un conjunto de **graficos** donde indicamos la metrica y el grafico a usar para representarla. 
+
+### Aclaracion de algunos terminos
+
+> **Usuarios**: En condiciones normales es igual a la cantidad de dispositivos y no a la cantidad de personas. Una persona puede haberse conectado con 3 dispositivos personales diferentes luego GA4 cuenta 3 Usuarios en vez de uno. Incluso como incognito seria otro usuario.
+> **Total Usuarios**: No es igual a la suma de usuarios puesto que la suma de usuarios tiene en cuenta usuarios recurrentes no solo nuevos. 
+![image](https://user-images.githubusercontent.com/60556632/169399678-cc654608-3ddf-4506-8eb6-43607678a15e.png)
+
+> **Tipo de usuarios**
+
+![image](https://user-images.githubusercontent.com/60556632/169401782-6a8d9f31-690d-486d-b722-2e9b379d243f.png)
+
+> **Sesiones**: Es diferente a la interaccion entre paginas pero esta realacionado al tiempo de permanencia. En la siguiente _figura_ se observa cuantos intervalos de 30 min de permanencia se generaron durante las interacciones del usuario. 
+
+![image](https://user-images.githubusercontent.com/60556632/169402329-8397e13e-6731-40ce-98a5-045895bf6974.png)
+
+> **Visitas a paginas** Es igual a la cantidad total de paginas vistas incluso a quellas que se repitieron para tratar de acceder a otras. Esto se puede evitar usando la metrica de **paginas vistas unicas**.
+> **Duracion media de la sesion**: Se calcula la diferencia de tiempo entre paginas sin embargo, esto no se puede realizar con la ultima pagina por lo cual GA4 asume no interactuo con la pagina. Para resolver esto se requiere codigo adicional donde se puede usar el scroll como referencia para saber cuanto tiempo duro el usuario en la pagina. 
+
+![image](https://user-images.githubusercontent.com/60556632/169404454-839e1967-5d84-4f72-956c-28c0452f7079.png)
+
+> **Porcentaje de Rebote**: Es importante tenerlo en cuenta cuando hay un volumen considelable de datos cuando conocemos la fuente y el contenido de la pagina de lo contrario podria guiar a malas interpretaciones.
+
+![image](https://user-images.githubusercontent.com/60556632/169405510-41520148-2e89-498d-8d91-e6278ddb54c8.png)
 
 ### Cómo compartir informes
 ---
