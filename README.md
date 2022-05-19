@@ -64,3 +64,27 @@ En cuanto hemos encontrado datos significativos podemos:
 ![image](https://user-images.githubusercontent.com/60556632/169195247-19b567af-9e1a-4bc8-97a8-c6ef4c9c16a8.png)
 
 - Para crear informes usamos la pestaña **Personalizacion** -> Panel(Dashboard) y luego lo creamos le damos un nombre ademas podemos **Añadir un widget** donde indicamos la metrica a usar y el tipo de grafico. Por cada vista podemos tener 20 Dashboards privados y 50 Dashboards publicos. 
+
+
+### Informes Basicos
+
+**Informes Audiencia**
+Los [informes Audiencia](https://support.google.com/analytics/answer/1012034?hl=es#zippy=%2Csecciones-de-este-art%C3%ADculo) le ofrecen información valiosa sobre las características de su audiencia.
+
+- **Usuarios activos**: En este informe podemos ver cuántos usuarios han estado activo en el rango de fecha que hayamos seleccionado. Útil para comparar el tipo de tráfico y que porcentaje de los usuarios totales supone.
+
+- **Información geográfica**: En este apartado veremos la ubicación y el idioma que usan los usuarios que acceden a nuestra web. Esto es muy útil para analizar si nos interesaría ampliar nuestro público objetivo y traducir nuestro sitio a los idiomas más usados por nuestros usuarios.
+
+- **Flujo de usuarios**: Este informe es muy importante ya que nos enseña en forma de mapa el flujo que han tenido los usuarios en nuestro sitio web, la página de destino y todas las interacciones que van haciendo y el sitio en el que van abandonando la web. Es útil para analizar las páginas con más abandonos, y saber si hay algún problema en ellas, o analizar el tipo de contenido que hay en dicha página.
+
+La configuracion o incluso habilitacion de opciones no disponibles en el informa se puede establecer desde `configuracion de propiedades`.
+
+**Informes Adquisición**
+Los informes Adquisición pueden proporcionar información valiosa sobre cómo los usuarios llegan a su sitio web y el nivel de eficacia de su publicidad y marketing digital en los distintos canales como el correo electrónico, el buscador y los anuncios de display. Estos son algunos de los informes más importantes y útiles de Google Analytics.
+
+**Medium/Medios**: Es el mecanismo por el cual llegan usuarios a nuestro sitio web:
+- Organic: Google Search Bar
+- CPC: Google Ads
+- Referals: Other websites
+- Email: Email Marketing Compaign
+- None of the Above: Cuando la URL es escrita directamente. 
