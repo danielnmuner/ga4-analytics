@@ -64,7 +64,7 @@ En la barra de busqueda podemos ser mas especifico con la dimension o por ejempl
 > **Total Usuarios**: No es igual a la suma de usuarios puesto que la suma de usuarios tiene en cuenta usuarios recurrentes no solo nuevos. 
 ![image](https://user-images.githubusercontent.com/60556632/169399678-cc654608-3ddf-4506-8eb6-43607678a15e.png)
 
-> **Tipo de usuarios**
+> **Tipo de usuarios** Esto nos permite entender porque no podemos decir que los usuarios totales es la suma de `usuarios nuevos + usuarios recurrentes`. La razon es porque para un periodo determinado el usuario nuevo se puede volver recurrente varias veces.
 
 ![image](https://user-images.githubusercontent.com/60556632/169401782-6a8d9f31-690d-486d-b722-2e9b379d243f.png)
 
@@ -135,6 +135,46 @@ Los informes Comportamiento muestran cómo los usuarios interactúan con su siti
 - **Comportamiento** -> _Contenido del Sitio_ -> **Exit Pages** Paginas donde los usuarios dejaron el sitio web.
 - **Comportamiento** -> _Eventos_ -> **Desglose de Contenido** Permite evaluar como interactuan los usuarios con objetos especificos del sitio web como botones o reproductor de video.
 
+### Cómo medir las campañas personalizadas
+Las campañas de publicidad pueden ser una manera eficaz de traer usuarios a su sitio web y ampliar su negocio. Puede usar Google Analytics para hacer el seguimiento de sus campañas de marketing de Google Ads o de otras plataformas. Si usa otras plataformas, puede añadir manualmente etiquetas de las campañas personalizadas a las URL de marketing para que Google Analytics haga un seguimiento de la repercusión de esas campañas.
 
+[Recoger datos de campañas con URL personalizadas](https://support.google.com/analytics/answer/1033863?hl=es#zippy=%2Cen-este-art%C3%ADculo)
 
+**Parámetros**
+Hay 5 parámetros que se pueden añadir a las URL:
 
+- `utm_source`: el anunciante, el sitio web, la publicación o la fuente que envía tráfico a su propiedad, por ejemplo, google, boletininformativo4, billboard.
+- `utm_medium`: medio publicitario o de marketing, por ejemplo, cpc, banner o boletín informativo por correo electrónico.
+- `utm_campaign`: el nombre de campaña, el eslogan, el código promocional u otra información de un producto determinado.
+- `utm_term`: las palabras clave de búsqueda de pago. Si etiqueta campañas de palabra clave de pago de forma manual, también deberá usar utm_term para especificar el término en cuestión.
+- `utm_content`: se usa para diferenciar el contenido o los enlaces similares del mismo anuncio. Por ejemplo, si tiene dos enlaces de llamada a la acción en un mismo mensaje de correo electrónico, puede utilizar - - - `utm_content` y establecer distintos valores para cada uno a fin de determinar qué versión es más eficaz.
+
+Solo tenemos que añadir esta informacion a la URL **fuente/Medium** para que Google Analytics sea notificado hacerca de la campaña **Google Ads** o lo que sea que nos este generando trafico. Podemos los paremetros necesarios para ser tan especificos como deseemos. 
+
+```sh
+https://www.example.com/?utm_source=campaña_correo&utm_medium=correo&utm_campaign=rebajas-verano
+```
+
+### Realizar un seguimiento de las campañas con el [Creador de URLs](https://ga-dev-tools.web.app/campaign-url-builder/)
+Google Analytics proporciona la herramienta Creador de URLs, que le facilita el proceso de agregar los parámetros de su campaña a las URL para realizar un seguimiento de las campañas personalizadas. Apesar de que existe el creador de URLs este solo permite crear una a la vez, por lo cual es mas practico usar `spreadsheet` y crear nuestro propio [template](https://docs.google.com/spreadsheets/d/1tf3_SczMMTTf-ZJ9Bkb70xps_DPGLBTd4wkHPyadKSA/edit?hl=es&;usp=sharing&hl=es#gid=1) para concatenar los valores indicados.
+
+**Adquisición** -> _Campañas_ -> **Todas las Campañas** -> Usamos el buscador para filtrar por tipo de campaña. Seleccionamos la campaña y añadimos la dimension secundaria `Ad Content/Contenido del Anuncio`, entre otras como `palabra clave` o para identificar el contenido original de la URL y que tags estaba portando.
+
+### Medir los objetivos de empresa con la función Objetivos
+Objetivos de Google Analytics le permite asociar las métricas de sus informes con los objetivos empresariales específicos. Esta función puede ser una manera muy eficaz de utilizar los datos para ver si está cumpliendo los objetivos empresariales.
+
+**Tipos de Objetivos**
+- Objetivos de Negocio: Acciones que queremos que nuestro usuario ejecute o tambien conocidas como conversiones.
+- Objetivos de Google Analytics: Es realmente un tracker de conversiones para crear un funnel de conversion. Podemos tener maximo 20 objetivos por vista en GA. Y la idea es monitoriear hasta que nivel de objetivo llega el usuario en el embudo. 
+
+**Pasos a seguir para crear y visualizar un Goal**:
+- **Administrar** -> Vista -> Objetivos -> Crear Objetivo ->Seguimos el [paso a paso](https://analytics.google.com/analytics/academy/course/6/unit/4/lesson/3)
+- **Conversiones** -> Resumen
+- **Conversiones** -> Grafico de embudo de conversion.
+
+### Cómo medir campañas de Google Ads
+Google Ads ofrece una manera muy eficaz de anunciarse en las plataformas web de Google. Puede vincular su cuenta de Analytics con Google Ads para medir la repercusión que tienen las campañas publicitarias en su empresa.
+
+- Para enlazar Ads con Analytics **Administrar** -> _Propiedad_ -> **Vinculaciones con Google Ads** -> Indicamos el # de cuenta de Ads.
+
+- Luego de realizar la comunicacion, vamos a **Adquisicion** -> _Google Ads_. Ahi podemos ver diferentes informes como **Campañas**, **Palabra Clave** ademas podemos utilizar dimensiones secundarias para ver los tipos de dispositivos usados. 
